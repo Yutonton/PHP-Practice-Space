@@ -2,12 +2,10 @@
 
 </form>
 
-<form action="#" >
-PASS:<input type="password" name="pw" maxlength="5" />
-</form>
 
-<p>Input Your Name</p>
 <form action="indexA.php" method="post">
+PASS:<input type="password" name="pw" maxlength="5" />
+<p>Input Your Name</p>
 <input type="text" name="user" size="25">
 
 <br>
