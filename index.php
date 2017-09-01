@@ -2,7 +2,7 @@
 <p>Input Your Name</p>
 <form action="indexA.php" method="post">
 <input type="text" name="user" size="25">
-<input type="submit" value="GO!!">
+
 </form>
 
 
