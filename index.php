@@ -15,9 +15,9 @@ PASS:<input type="password" name="pw" maxlength="5" />
 <br>
 
 <select name="code1">
-<option value="100">Tokyo</option>
-<option value="101">Bangkok</option>
-<option value="102">Washington</option>
+<option value="081">Tokyo</option>
+<option value="066">Bangkok</option>
+<option value="011">Washington</option>
 </select>
 
 
