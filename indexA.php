@@ -10,7 +10,7 @@ echo 'Hello ,' , $_REQUEST['user'];
 ?>
 <br>
 <?php
-echo 'These Inteternational Access number are ', $_REQUEST['code1'],  ' and ' , $_REQUEST['code2'] ;
+echo 'These Inteternational Access number are ', $_REQUEST['code1'], <br> ' and ' , $_REQUEST['code2'] ;
 ?>
 
 
