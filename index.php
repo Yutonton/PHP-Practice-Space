@@ -24,7 +24,7 @@ PASS:<input type="password" name="pw" maxlength="5" />
 <select name="code2">
 <?php
 $store=[
-	'Tokyo'=>100, 'Bangkok'=>101, 'Washington'=>102
+	'Tokyo'=>081, 'Bangkok'=>066, 'Washington'=>011
 ];
 foreach ($store as $key=>$value) {
 	echo '<option value="', $value, '">', $key, '</option>';
