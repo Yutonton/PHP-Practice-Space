@@ -10,5 +10,14 @@
 PASS:<input type="password" name="pw" maxlength="5" />
 </form>
 
+<p>Choose place</p>
+<form action="store-output.php" method="post">
+<select name="code">
+<option value="100">Tokyo</option>
+<option value="101">Bangkok</option>
+<option value="102">Washington</option>
+</select>
+<p><input type="submit" value="SELECT"></p>
+</form>
 
 <?php require 'footer.php'; ?>
