@@ -1,7 +1,7 @@
 ﻿<?php require 'header.php'; ?>
 
 <?php
-echo 'Hello ,' , $_REQUEST['user'];
+echo 'Hello ,' , $_REQUEST['user']\n;
 ?>
 
 <?php
