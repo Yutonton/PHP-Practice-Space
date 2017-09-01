@@ -13,11 +13,27 @@ PASS:<input type="password" name="pw" maxlength="5" />
 <br>
 <p>Choose place</p>
 <br>
-<select name="code">
+
+<select name="code1">
 <option value="100">Tokyo</option>
 <option value="101">Bangkok</option>
 <option value="102">Washington</option>
 </select>
+
+
+<select name="code2">
+<?php
+$store=[
+	'Tokyo'=>100, 'Bangkok'=>101, 'Washington'=>102
+];
+foreach ($store as $key=>$value) {
+	echo '<option value="', $value, '">', $key, '</option>';
+}
+?>
+</select>
+
+
+
 <p><input type="submit" value="SELECT"></p>
 </form>
 

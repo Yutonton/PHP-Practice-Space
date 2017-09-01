@@ -5,7 +5,7 @@ echo 'Hello ,' , $_REQUEST['user'];
 ?>
 <br>
 <?php
-echo '店舗コードは', $_REQUEST['code'], 'です。';
+echo 'Code are ', $_REQUEST['code1'],  ' and ' ,$_REQUEST['code2'];
 ?>
 
 
