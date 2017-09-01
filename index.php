@@ -9,7 +9,7 @@ PASS:<input type="password" name="pw" maxlength="5" />
 <p>Input Your Name</p>
 <form action="indexA.php" method="post">
 <input type="text" name="user" size="25">
-<input type="submit" value="GO!!">
+
 <br>
 <p>Choose place</p>
 <br>
@@ -34,7 +34,7 @@ foreach ($store as $key=>$value) {
 
 
 
-<p><input type="submit" value="SELECT"></p>
+<p><input type="submit" value="GO!!"></p>
 </form>
 
 <?php require 'footer.php'; ?>
