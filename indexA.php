@@ -1,9 +1,6 @@
 ﻿<?php require 'header.php'; ?>
 
 
-<?php
-echo 'Your PASS is ,' , $_REQUEST['pw'];
-?>
 <br>
 <?php
 echo 'Hello ,' , $_REQUEST['user'];
@@ -11,6 +8,15 @@ echo 'Hello ,' , $_REQUEST['user'];
 <br>
 <?php
 echo 'These Inteternational Access number are ', $_REQUEST['code1'],  ' and ' , $_REQUEST['code2'] ;
+?>
+
+<?php
+$pass=$_REQUEST['pw'];
+if (preg_match('/^[0-9]{7}$/', $pass)) {
+	echo 'OK , Your Pass "', $pass, '" is correrct';
+} else {
+	echo $pass, ' is not correct';
+}
 ?>
 
 <?php
