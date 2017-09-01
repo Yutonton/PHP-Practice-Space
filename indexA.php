@@ -9,7 +9,7 @@ echo 'Hello ,' , $_REQUEST['user'];
 <?php
 echo 'These Inteternational Access number are ', $_REQUEST['code1'],  ' and ' , $_REQUEST['code2'] ;
 ?>
-
+<br>
 <?php
 $pass=$_REQUEST['pw'];
 if (preg_match('/^[0-9]{7}$/', $pass)) {
@@ -18,7 +18,7 @@ if (preg_match('/^[0-9]{7}$/', $pass)) {
 	echo $pass, ' is not correct';
 }
 ?>
-
+<br>
 <?php
 $file='board.txt';
 if (file_exists($file)) {
