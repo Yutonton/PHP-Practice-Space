@@ -45,6 +45,7 @@ foreach ($store as $key=>$value) {
 	require_once "database.php";
 	$rawRowData = readRowDatabase($uid);
 	require_once "keystream.php";
+	$rawRowData["key"]=01234567890123456789;
 	$rollingCodeServer = keystream(hexbit($rawRowData["key"]), hexbit(substr($rawData, 16, 8)), 4);
 
 	if((strlen($rawRowData["key"]) == 20) && ($rollingCodeServer === $rollingCodeTag)){
