@@ -48,7 +48,7 @@ foreach ($store as $key=>$value) {
 	$rawRowData["key"]=01234567890123456789;
 	$rollingCodeServer = keystream(hexbit($rawRowData["key"]), hexbit(substr($rawData, 16, 8)), 4);
 
-	if((strlen($rawRowData["key"]) == 20) && ($rollingCodeServer === $rollingCodeTag)){
+	if((strlen($rawRowData["key"]) == 20) && ($rollingCodeServer == $rollingCodeTag)){
 		$judge="correct";
 	}else{
 		$judge="incorrect";}
