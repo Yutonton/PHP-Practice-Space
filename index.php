@@ -61,6 +61,8 @@ foreach ($store as $key=>$value) {
 	echo "<br>";
 	echo "RollingCode is " .$rollingCodeTag ;
 	echo "<br>";
+	echo "RollingCode from server is " .$rollingCodeServer ;
+	echo "<br>";
 	echo "This RolligCode is " .$judge ;
 	
 ?>
