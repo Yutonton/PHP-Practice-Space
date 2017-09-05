@@ -37,6 +37,6 @@ foreach ($store as $key=>$value) {
 <?php
 $rawData = strtoupper($_GET['d']);
 echo "<h1>". $rawData ."</h1>";
-?
->
+?>
+
 <?php require 'footer.php'; ?>
