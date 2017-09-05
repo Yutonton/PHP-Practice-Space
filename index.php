@@ -47,10 +47,10 @@ foreach ($store as $key=>$value) {
 	require_once "keystream.php";
 	$rollingCodeServer = keystream(hexbit($rawRowData["key"]), hexbit(substr($rawData, 16, 8)), 4);
 
-//	if((strlen($rawRowData["key"]) == 20) && ($rollingCodeServer === $rollingCodeTag)){
-//		$judge="correct";
-//	}else{
-//		$judge="incorrect";}
+	if((strlen($rawRowData["key"]) == 20) && ($rollingCodeServer === $rollingCodeTag)){
+		$judge="correct";
+	}else{
+		$judge="incorrect";}
 
 
 //	echo "UID is " .$uid; <br>	
