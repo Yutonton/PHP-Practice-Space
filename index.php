@@ -55,7 +55,7 @@ foreach ($store as $key=>$value) {
 	TamperStatus: echo " $flagTamper";
 	TimeStamp: echo " $timeStampTag";
 	RollingCode: echo " $rollingCodeTag";
-	RolligCode is : " $Judge";
+	RolligCode is : echo " $Judge";
 	
 ?>
 
