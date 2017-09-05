@@ -46,16 +46,16 @@ foreach ($store as $key=>$value) {
 	$rollingCodeServer = keystream(hexbit($rawRowData["key"]), hexbit(substr($rawData, 16, 8)), 4);
 
 	if((strlen($rawRowData["key"]) == 20) && ($rollingCodeServer === $rollingCodeTag)){
-		$judge='correct';
+		$judge="correct";
 	}else{
-		$judge='incorrect';}
+		$judge="incorrect";}
 
 
-	echo "UID is ${uid}"; <br>	
-	echo "TamperStatus is ${flagTamper}";<br>
-	echo "TimeStamp is ${timeStampTag}";<br>
-	echo "RollingCode is ${rollingCodeTag}";<br>
-	echo "This RolligCode is ${judge}";<br>
+	echo "UID is " .$uid; <br>	
+	echo "TamperStatus is " .$flagTamper;<br>
+	echo "TimeStamp is" .$timeStampTag;<br>
+	echo "RollingCode is " .$rollingCodeTag;<br>
+	echo "This RolligCode is " .$judge;<br>
 	
 ?>
 
