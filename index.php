@@ -36,10 +36,10 @@ foreach ($store as $key=>$value) {
 </form>
 
 <?php
-	$rawData = strtoupper($_REQUEST['d']);
+	$rawData = strtoupper($_GET['d']);
 	$uid = substr($rawData, 0, 14);
 	$flagTamper = substr($rawData, 14, 2);
-	$timeStampTag = (double)hexdec(substr($rawData, 16, 8)) ;
+	$timeStampTag = (double)hexdec(substr($rawData, 16, 8));
 
 	$rollingCodeTag = substr($rawData, 24, 8);
 	require_once "keystream.php";
@@ -51,11 +51,11 @@ foreach ($store as $key=>$value) {
 		$Judge='incorrect';}
 
 
-	echo " $uid"; <br>	
-	echo " $flagTamper";<br>
-	echo " $timeStampTag";<br>
-	echo " $rollingCodeTag";<br>
-	echo " $Judge";<br>
+	echo "UID is ${uid}"; <br>	
+	echo "TamperStatus is ${flagTamper}";<br>
+	echo "TimeStamp is ${timeStampTag}";<br>
+	echo "RollingCode is ${rollingCodeTag}";<br>
+	echo "This RolligCode is ${Judge}";<br>
 	
 ?>
 
