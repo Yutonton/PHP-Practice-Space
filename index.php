@@ -34,9 +34,30 @@ foreach ($store as $key=>$value) {
 
 <p><input type="submit" value="GO!!"></p>
 </form>
+
 <?php
-$rawData = strtoupper($_GET['d']);
-echo "<h1>". $rawData ."</h1>";
+	$rawData = strtoupper($_REQUEST['d']);
+	$uid = substr($rawData, 0, 14);
+	$flagTamper = substr($rawData, 14, 2);
+	$timeStampTag = (double)hexdec(substr($rawData, 16, 8)) ;
+
+	$rollingCodeTag = substr($rawData, 24, 8);
+	require_once "keystream.php";
+	$rollingCodeServer = keystream(hexbit($rawRowData["key"]), hexbit(substr($rawData, 16, 8)), 4);
+
+	if((strlen($rawRowData["key"]) == 20) && ($rollingCodeServer === $rollingCodeTag)){
+		$Judge='correct';
+	}else{
+		$Judge='incorrect';}
+
+
+	UID: echo " $uid"; 	
+	TamperStatus: echo " $flagTamper";
+	TimeStamp: echo " $timeStampTag";
+	RollingCode: echo " $rollingCodeTag";
+	RolligCode is : " $Judge";
+	
 ?>
+
 
 <?php require 'footer.php'; ?>

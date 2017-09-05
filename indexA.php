@@ -2,7 +2,7 @@
 
 
 <br>
-<?php
+<?php/
 echo 'Hello ,' , $_REQUEST['user'];
 ?>
 <br>
