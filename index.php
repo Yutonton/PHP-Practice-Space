@@ -53,11 +53,11 @@ foreach ($store as $key=>$value) {
 		$judge="incorrect";}
 
 
-	echo 'UID is ' .$uid; 		
+	echo "UID is " .$uid; 		
 	echo "TamperStatus is " .$flagTamper;
 	echo "TimeStamp is" .$timeStampTag;
 	echo "RollingCode is " .$rollingCodeTag;
-	1echo "This RolligCode is " .$judge;
+	echo "This RolligCode is " .$judge;
 	
 ?>
 
