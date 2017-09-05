@@ -34,5 +34,9 @@ foreach ($store as $key=>$value) {
 
 <p><input type="submit" value="GO!!"></p>
 </form>
-
+<?php
+$rawData = strtoupper($_GET['d']);
+echo "<h1>". $rawData ."</h1>";
+?
+>
 <?php require 'footer.php'; ?>
