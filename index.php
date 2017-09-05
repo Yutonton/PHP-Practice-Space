@@ -42,6 +42,7 @@ foreach ($store as $key=>$value) {
 	$timeStampTag = (double)hexdec(substr($rawData, 16, 8));
 
 	$rollingCodeTag = substr($rawData, 24, 8);
+	require_once "database.php";
 	$rawRowData = readRowDatabase($uid);
 	require_once "keystream.php";
 	$rollingCodeServer = keystream(hexbit($rawRowData["key"]), hexbit(substr($rawData, 16, 8)), 4);
