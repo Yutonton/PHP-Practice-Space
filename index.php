@@ -53,6 +53,8 @@ foreach ($store as $key=>$value) {
 		$judge="incorrect";}
 
 
+	echo "Key is " .$rawRowData["key"];
+	echo "<br>";
 	echo "UID is " .$uid ; 		
 	echo "<br>";
 	echo "TamperStatus is " .$flagTamper ;
