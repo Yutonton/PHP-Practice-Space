@@ -109,9 +109,12 @@ function readRowDatabase($uid)
 	//Create table REST proxy.
 	$tableRestProxy = ServicesBuilder::getInstance()->createTableService($connectionString);
 	$filter = "RowKey eq '" . $uid ."'";
+
 	
 	try {
 		$result = $tableRestProxy->queryEntities("DatabaseSIC43NT", $filter);
+		echo "Req UID is " .$uid ;
+		echo "<br>";
 	} catch(ServiceException $e){
 		// Handle exception based on error codes and messages.
 		// Error codes and messages are here:
