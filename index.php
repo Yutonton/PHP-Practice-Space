@@ -53,12 +53,7 @@ foreach ($store as $key=>$value) {
 		$judge="incorrect";}
 
 
-	echo "Key is " .$rawRowData["key"];
-	echo "<br>";
-	echo "Table UID " .$rawRowData["uid"];
-	echo "<br>";
-	echo "Table Time stamp " .$rawRowData["TimeStampServer"];
-	echo "<br>";
+
 
 	
 	echo "UID is " .$uid ; 		
