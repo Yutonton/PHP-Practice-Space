@@ -126,7 +126,8 @@ function readRowDatabase($uid)
 	}
 
 	$entities = $result->getEntities();
-	
+	echo "entity count is " .count($entities);
+	echo "<br>";
 	if(!empty($entities))
 	{
 		$arrayRawData["uid"] = $entities[0]->getProperty("RowKey")->getValue();
