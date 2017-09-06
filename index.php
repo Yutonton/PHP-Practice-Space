@@ -55,8 +55,12 @@ foreach ($store as $key=>$value) {
 
 	echo "Key is " .$rawRowData["key"];
 	echo "<br>";
-	echo "Debug " .$rawRowData;
+	echo "Table UID " .$rawRowData["uid"];
 	echo "<br>";
+	echo "Table Time stamp " .$rawRowData["TimeStampServer"];
+	echo "<br>";
+
+	
 	echo "UID is " .$uid ; 		
 	echo "<br>";
 	echo "TamperStatus is " .$flagTamper ;
