@@ -118,6 +118,8 @@ function readRowDatabase($uid)
 		// http://msdn.microsoft.com/library/azure/dd179438.aspx
 		$code = $e->getCode();
 		$error_message = $e->getMessage();
+		echo "ERROR is " .$code .":" .$error_message;
+		echo "<br>";
 	}
 
 	$entities = $result->getEntities();
