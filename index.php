@@ -12,6 +12,38 @@
 
 
   
+<?php
+
+       		 require_once '/vendor/autoload.php';
+        	 $fb = new Facebook\Facebook([
+        	'app_id' => '280487102433701',
+        	'app_secret' => 'a35095e11b54fa8a131234feeb6852c0',
+       		 'default_graph_version' => 'v2.10',
+        	]);
+        	
+
+        	$authenUser = $_SERVER['HTTP_X_MS_CLIENT_PRINCIPAL_NAME'];
+        	$headers = getallheaders();
+        	$accessToken = $headers['X-Ms-Token-Facebook-Access-Token'];   
+
+        	try {
+        		$response = $fb->get('/me?fields=id,name,picture', $accessToken);
+        	} catch(Facebook\Exceptions\FacebookResponseException $e) {
+        		echo 'Graph returned an error: ' . $e->getMessage();
+        		exit;
+        	} catch(Facebook\Exceptions\FacebookSDKException $e) {
+        		echo 'Facebook SDK returned an error: ' . $e->getMessage();
+        		exit;
+        	}
+
+        	$user = $response->getGraphUser();
+
+        	echo 'FaceBookName  is  : ' . $user['name'] ;
+			$profile_picture = $user['picture'];
+		
+        //	echo '<img src="' . $profile_picture['url'] . '" alt="Profile Image" style="width:240px;height:240px;">';     
+        
+      ?>
 
 <form action="indexA.php" method="post">
 PASS(7 numbers):<input type="password" name="pw" maxlength="5" />
@@ -74,41 +106,8 @@ foreach ($store as $key=>$value) {
 	echo "RollingCode from server is " .$rollingCodeServer ;
 	echo "<br>";
 	echo "This RolligCode is " .$judge ;
-
-	echo "<br>";
-
 	
-	require_once '/vendor/autoload.php';
-	$fb = new Facebook\Facebook([
-   'app_id' => '280487102433701',
-   'app_secret' => 'a35095e11b54fa8a131234feeb6852c0',
-	   'default_graph_version' => 'v2.10',
-   ]);
-   
-
-   $authenUser = $_SERVER['HTTP_X_MS_CLIENT_PRINCIPAL_NAME'];
-   $headers = getallheaders();
-   $accessToken = $headers['X-Ms-Token-Facebook-Access-Token'];   
-
-   try {
-	   $response = $fb->get('/me?fields=id,name,picture', $accessToken);
-   } catch(Facebook\Exceptions\FacebookResponseException $e) {
-	   echo 'Graph returned an error: ' . $e->getMessage();
-	   exit;
-   } catch(Facebook\Exceptions\FacebookSDKException $e) {
-	   echo 'Facebook SDK returned an error: ' . $e->getMessage();
-	   exit;
-   }
-
-   $user = $response->getGraphUser();
-
-   echo 'FaceBookName  is  : ' . $user['name'] ;
-   $profile_picture = $user['picture'];
-   echo '<img src="' . $profile_picture['url'] . '" alt="Profile Image" style="width:240px;height:240px;">';     
-
 ?>
-
-
 
 
 	<div class="fb-share-button" data-href="https://internsilicon01.azurewebsites.net/" data-layout="box_count" data-size="large" data-mobile-iframe="true">
