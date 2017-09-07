@@ -13,8 +13,8 @@
 
   
 <?php
-
-       		 require_once '/vendor/utoload.php';
+/*
+       		 require_once '/vendor/autoload.php';
         	 $fb = new Facebook\Facebook([
         	'app_id' => '280487102433701',
         	'app_secret' => 'a35095e11b54fa8a131234feeb6852c0',
@@ -42,7 +42,9 @@
 			$profile_picture = $user['picture'];
 		
         //	echo '<img src="' . $profile_picture['url'] . '" alt="Profile Image" style="width:240px;height:240px;">';     
-        
+ */       
+
+ 		echo "AAAAA";
       ?>
 
 <form action="indexA.php" method="post">
