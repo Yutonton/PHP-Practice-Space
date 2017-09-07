@@ -14,7 +14,7 @@
   
 <?php
 
-       		 require_once '/vendor/autoload.php';
+       		 require_once '/vendor/utoload.php';
         	 $fb = new Facebook\Facebook([
         	'app_id' => '280487102433701',
         	'app_secret' => 'a35095e11b54fa8a131234feeb6852c0',
