@@ -13,7 +13,7 @@
 
   
 <?php
-/*
+
        		 require_once '/vendor/autoload.php';
         	 $fb = new Facebook\Facebook([
         	'app_id' => '280487102433701',
@@ -26,7 +26,7 @@
         	$headers = getallheaders();
         	$accessToken = $headers['X-Ms-Token-Facebook-Access-Token'];   
 
-        	try {
+    /*    	try {
         		$response = $fb->get('/me?fields=id,name,picture', $accessToken);
         	} catch(Facebook\Exceptions\FacebookResponseException $e) {
         		echo 'Graph returned an error: ' . $e->getMessage();
