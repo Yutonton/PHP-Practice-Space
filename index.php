@@ -21,7 +21,7 @@
        		 'default_graph_version' => 'v2.10',
         	]);
         	
-
+			echo "A";
         	$authenUser = $_SERVER['HTTP_X_MS_CLIENT_PRINCIPAL_NAME'];
         	$headers = getallheaders();
         	$accessToken = $headers['X-Ms-Token-Facebook-Access-Token'];   
