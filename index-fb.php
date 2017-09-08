@@ -26,8 +26,8 @@
 
         require_once '/vendor/autoload.php';
         $fb = new Facebook\Facebook([
-            'app_id' => '280487102433701',
-            'app_secret' => 'a35095e11b54fa8a131234feeb6852c0',
+            'app_id' => '1909305535989351',
+            'app_secret' => '61db0b81059abc688802c1c2dac13101',
             'default_graph_version' => 'v2.10',
         ]);
         echo "start fb 002 <br>";
