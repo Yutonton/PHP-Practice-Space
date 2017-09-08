@@ -23,11 +23,11 @@
 				]);
 			
 			echo "A";
-   /*     	$authenUser = $_SERVER['HTTP_X_MS_CLIENT_PRINCIPAL_NAME'];
+   	    	$authenUser = $_SERVER['HTTP_X_MS_CLIENT_PRINCIPAL_NAME'];
         	$headers = getallheaders();
         	$accessToken = $headers['X-Ms-Token-Facebook-Access-Token'];   
 
-    /*    	try {
+        	try {
         		$response = $fb->get('/me?fields=id,name,picture', $accessToken);
         	} catch(Facebook\Exceptions\FacebookResponseException $e) {
         		echo 'Graph returned an error: ' . $e->getMessage();
@@ -42,8 +42,8 @@
         	echo 'FaceBookName  is  : ' . $user['name'] ;
 			$profile_picture = $user['picture'];
 		
-        //	echo '<img src="' . $profile_picture['url'] . '" alt="Profile Image" style="width:240px;height:240px;">';     
- */       
+        	echo '<img src="' . $profile_picture['url'] . '" alt="Profile Image" style="width:240px;height:240px;">';     
+       
 
  		echo "AAAAA";
       ?>
