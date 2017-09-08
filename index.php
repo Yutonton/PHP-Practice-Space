@@ -15,11 +15,12 @@
 <?php
 
        		 require_once '/vendor/autoload.php';
-        	 $fb = new Facebook\Facebook([
-       /* 	'app_id' => '280487102433701',
-        	'app_secret' => 'a35095e11b54fa8a131234feeb6852c0',
-       		 'default_graph_version' => 'v2.10',*/
-			]);
+
+			$fb = new Facebook\Facebook([
+				'app_id' => '280487102433701',
+				'app_secret' => 'a35095e11b54fa8a131234feeb6852c0',
+				'default_graph_version' => 'v2.10',
+				]);
 			
 			echo "A";
         	$authenUser = $_SERVER['HTTP_X_MS_CLIENT_PRINCIPAL_NAME'];
