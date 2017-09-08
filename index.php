@@ -23,8 +23,8 @@
 				]);
 			
 			echo "A";
-        	$authenUser = $_SERVER['HTTP_X_MS_CLIENT_PRINCIPAL_NAME'];
-        /*	$headers = getallheaders();
+   /*     	$authenUser = $_SERVER['HTTP_X_MS_CLIENT_PRINCIPAL_NAME'];
+        	$headers = getallheaders();
         	$accessToken = $headers['X-Ms-Token-Facebook-Access-Token'];   
 
     /*    	try {
