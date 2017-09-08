@@ -25,11 +25,16 @@
         echo "start fb 001 <br>";
 
         require_once '/vendor/autoload.php';
+        try {
         $fb = new Facebook\Facebook([
             'app_id' => '1909305535989351',
             'app_secret' => '61db0b81059abc688802c1c2dac13101',
             'default_graph_version' => 'v2.10',
         ]);
+        }catch(Exception $e){
+            echo 'Caught exception:',$e->getMessage(),"\n";
+        }
+        
         echo "start fb 002 <br>";
 
         $authenUser = $_SERVER['HTTP_X_MS_CLIENT_PRINCIPAL_NAME'];
