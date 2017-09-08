@@ -22,7 +22,7 @@
 				'default_graph_version' => 'v2.10',
 				]);
 			
-		/*	echo "A";
+		
    	    	$authenUser = $_SERVER['HTTP_X_MS_CLIENT_PRINCIPAL_NAME'];
         	$headers = getallheaders();
         	$accessToken = $headers['X-Ms-Token-Facebook-Access-Token'];   
@@ -44,8 +44,8 @@
 		
         	echo '<img src="' . $profile_picture['url'] . '" alt="Profile Image" style="width:240px;height:240px;">';     
        
-*/
- 		echo "AAAAA";
+
+ 	
       ?>
 
 <form action="indexA.php" method="post">
