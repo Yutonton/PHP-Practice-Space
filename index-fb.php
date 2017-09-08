@@ -23,7 +23,7 @@
         }
         
         echo "start fb 001 <br>";
-
+        phpinfo();
         require_once '/vendor/autoload.php';
         try {
         $fb = new Facebook\Facebook([
