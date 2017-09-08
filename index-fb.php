@@ -26,7 +26,7 @@
         phpinfo();
         require_once '/vendor/autoload.php';
         try {
-        $fb = new Facebook\Facebook([
+        $fb = new \Facebook\Facebook([
             'app_id' => '1909305535989351',
             'app_secret' => '61db0b81059abc688802c1c2dac13101',
             'default_graph_version' => 'v2.10',
