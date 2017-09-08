@@ -9,6 +9,7 @@
         "pear-pear.php.net/mail_mime" : "*",
         "pear-pear.php.net/http_request2" : "*",
         "pear-pear.php.net/mail_mimedecode" : "*",
-        "microsoft/windowsazure": "*"
+        "microsoft/windowsazure": "*",
+        "facebook/graph-sdk": "^5.6"
     }
 }
