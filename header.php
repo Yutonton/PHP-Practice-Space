@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>PHP Practice Space</title>
+<title>POCARISWEAT~SUMMERCAMPAIGN~</title>
 
 <link rel="stylesheet" href="style1.css">
 </head>
