@@ -47,7 +47,7 @@
 
  	
       ?>
-
+I<!--
 <form action="indexA.php" method="post">
 PASS(7 numbers):<input type="password" name="pw" maxlength="5" />
 <p>Input Your Name</p>
@@ -65,21 +65,21 @@ PASS(7 numbers):<input type="password" name="pw" maxlength="5" />
 
 
 <select name="code2">
-<?php
-$store=[
-	'Tokyo'=>081, 'Bangkok'=>066, 'Washington'=>011
-];
-foreach ($store as $key=>$value) {
-	echo '<option value="', $value, '">', $key, '</option>';
-}
-?>
+	<?php 
+	/*	$store=[
+			'Tokyo'=>081, 'Bangkok'=>066, 'Washington'=>011
+		];
+		foreach ($store as $key=>$value) {
+			echo '<option value="', $value, '">', $key, '</option>';
+		} 
+	*/?>
 </select>
 
 
 
 <p><input type="submit" value="GO!!"></p>
 </form>
-
+-->
 <?php
 	$rawData = strtoupper($_GET['d']);
 	$uid = substr($rawData, 0, 14);
