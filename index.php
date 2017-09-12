@@ -1,6 +1,6 @@
 ﻿<?php require 'header.php'; ?>
 
-<link href="https://fonts.googleapis.com/css?family=Exo:400,900" rel="stylesheet"> 
+
 
  <section id="bodyflame">
  
