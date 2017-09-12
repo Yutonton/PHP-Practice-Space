@@ -1,5 +1,7 @@
 ﻿<?php require 'header.php'; ?>
 
+<link href="https://fonts.googleapis.com/css?family=Exo:400,900" rel="stylesheet"> 
+
  <section id="bodyflame">
  
 	<div id="fb-root"></div>
@@ -49,6 +51,9 @@
 
  	
       ?>
+
+
+	  <<p></p>
 <!--
 <form action="indexA.php" method="post">
 PASS(7 numbers):<input type="password" name="pw" maxlength="5" />
