@@ -42,7 +42,7 @@
         	echo 'FaceBookName  is  : ' . $user['name'] ;
 			$profile_picture = $user['picture'];
 		
-        	echo '<img src="' . $profile_picture['url'] . '" alt="Profile Image" style="width:240px;height:240px;">';     
+        	echo '<img src="' . $profile_picture['url'] . '" alt="Profile Image" style="width:60px;height:60px;">';     
        
 
  	
