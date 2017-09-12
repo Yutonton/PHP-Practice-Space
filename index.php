@@ -47,7 +47,7 @@
 
  	
       ?>
-I<!--
+<!--
 <form action="indexA.php" method="post">
 PASS(7 numbers):<input type="password" name="pw" maxlength="5" />
 <p>Input Your Name</p>
