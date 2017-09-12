@@ -1,5 +1,7 @@
 ﻿<?php require 'header.php'; ?>
 
+ <section id="bodyflame">
+ 
 	<div id="fb-root"></div>
 		<script>(function(d, s, id) {
   			var js, fjs = d.getElementsByTagName(s)[0];
@@ -117,5 +119,6 @@ PASS(7 numbers):<input type="password" name="pw" maxlength="5" />
 		<a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Finternsilicon01.azurewebsites.net%2F&amp;src=sdkpreparse">シェア</a>
 	</div>
 
+	</section>
 
 <?php require 'footer.php'; ?>

@@ -4,11 +4,13 @@ body{
 	/*background-image: url(Photo.jpg);
 	background-size: 1600px 900px;*/
 	background-repeat: repeat-y;
-	border-style:double;
-	border-color:#202020;
-	
 	padding-left: 100px;
 	size: 1600px 900px;
+}
+
+#bodyflame{
+	border-style:double;
+    border-color:#1c1c1c;
 }
 
 p {font-size:24px;}
