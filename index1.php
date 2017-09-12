@@ -39,10 +39,10 @@
 
         	$user = $response->getGraphUser();
 
-        	echo 'FaceBookName  is  : ' . $user['name'] ;
-			$profile_picture = $user['picture'];
+        	echo 'Hello : ' . $user['name'] ;
+		//	$profile_picture = $user['picture'];
 		
-        	echo '<img src="' . $profile_picture['url'] . '" alt="Profile Image" style="width:60px;height:60px;">';     
+        //	echo '<img src="' . $profile_picture['url'] . '" alt="Profile Image" style="width:60px;height:60px;">';     
        
 
  	
@@ -98,7 +98,7 @@ PASS(7 numbers):<input type="password" name="pw" maxlength="5" />
 		$judge="incorrect";}
 
 	
-	echo "UID is " .$uid ; 		
+/*	echo "UID is " .$uid ; 		
 	echo "<br>";
 	echo "TamperStatus is " .$flagTamper ;
 	echo "<br>";
@@ -109,7 +109,7 @@ PASS(7 numbers):<input type="password" name="pw" maxlength="5" />
 	echo "RollingCode from server is " .$rollingCodeServer ;
 	echo "<br>";
 	echo "This RolligCode is " .$judge ;
-	
+*/	
 ?>
 
 
