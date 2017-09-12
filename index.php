@@ -44,10 +44,11 @@
         	$user = $response->getGraphUser();
 ?>
         <p><?php	echo 'Hello : ' . $user['name'] ;?></p>
-		//	$profile_picture = $user['picture'];
+		
+		<?php	//$profile_picture = $user['picture'];
 		
         //	echo '<img src="' . $profile_picture['url'] . '" alt="Profile Image" style="width:60px;height:60px;">';     
-       
+       ?>
 
  	
       
