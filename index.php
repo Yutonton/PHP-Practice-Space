@@ -124,6 +124,7 @@ PASS(7 numbers):<input type="password" name="pw" maxlength="5" />
 	{
 		 $rawRowData["OwnerID"]=$user['id']; 
 		 echo $rawRowData["OwnerID"];
+		 updateRowDatabase($rawRowData);
 	}
 
 	
