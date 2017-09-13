@@ -47,8 +47,7 @@
 
 		<h1>SUMMER CAMPAIGN</h1>
 
-		<h2>Earn Points
-		Get Free Drink</h2>
+		<h2>Earn Points & Get Free Drink</h2>
 		
 		<?php	//$profile_picture = $user['picture'];
 		
