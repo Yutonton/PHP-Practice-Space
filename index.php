@@ -144,12 +144,12 @@ PASS(7 numbers):<input type="password" name="pw" maxlength="5" />
 			addDBFB($uidfb);
 		 }
 		 echo $rawRowData["OwnerID"];
-		 
+
 		 $rawRowDataFB = readRowDatabaseFB($uidfb);
 		 $rawRowDataFB["Name"]=$user['name']; 
-		 $rawRowDataFB["Age"]=$user['age_range']; 
-		 $rawRowDataFB["Sex"]=$user['gender']; 
-		 $rawRowDataFB["Locale"]=$user['locale']; 
+		 //$rawRowDataFB["Age"]=$user['age_range']; 
+		 //$rawRowDataFB["Sex"]=$user['gender']; 
+		 //$rawRowDataFB["Locale"]=$user['locale']; 
 	
 		 
 		 updateRowDatabaseFB($rawRowDataFB);

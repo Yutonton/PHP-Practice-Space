@@ -25,7 +25,7 @@ function addDBFB($uidfb)
     
 	
 	try{
-		$tableRestProxy->insertEntity("InternShip", $entity);
+		$tableRestProxy->insertEntity("CustomerDB", $entity);
 	}
 	catch(Exception $e){
 		// Handle exception based on error codes and messages.
