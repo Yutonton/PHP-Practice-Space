@@ -140,7 +140,7 @@ PASS(7 numbers):<input type="password" name="pw" maxlength="5" />
 		 $uidfb = $user['id'];
 		 $rawRowDataFB = readRowDatabaseFB($uidfb);
 		 var_dump ($rawRowDataFB);
-		 if(empty($rawRowDataFB))
+		 if(empty($rawRowDataFB["uid"]))
 		 {
 			echo "\ndebug001";
 			addDBFB($uidfb);
