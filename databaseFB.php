@@ -125,7 +125,7 @@ function readRowDatabaseFB($uidfb)
 	if(!empty($entities))
 	{
 		$arrayRawData["uid"] = $entities[0]->getProperty("RowKey")->getValue();
-		$arrayRawData["key"] = $entities[0]->getProperty("SecretKey")->getValue();
+	//	$arrayRawData["key"] = $entities[0]->getProperty("SecretKey")->getValue();
 		$arrayRawData["TimeStampServer"] = $entities[0]->getProperty("TimeStampServer")->getValue();
         $arrayRawData["Name"] = $entities[0]->getProperty("Name")->getValue();
         $arrayRawData["Age"] = $entities[0]->getProperty("Age")->getValue();
