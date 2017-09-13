@@ -17,10 +17,10 @@ function addDBFB($uidfb)
     $entity->setRowKey($uidfb);
     
 	$entity->addProperty("TimeStampServer", EdmType::INT32, -1);
-	$entity->addProperty("Name", EdmType::STRING, NULL);
-	$entity->addProperty("Age", EdmType::STRING, NULL);
-	$entity->addProperty("Sex", EdmType::STRING, NULL);
-	$entity->addProperty("Locale", EdmType::STRING,NULL);
+	$entity->addProperty("Name", EdmType::STRING, "abc");
+	$entity->addProperty("Age", EdmType::STRING, "abc");
+	$entity->addProperty("Sex", EdmType::STRING, "abc");
+	$entity->addProperty("Locale", EdmType::STRING,"abc");
 
     
 	
