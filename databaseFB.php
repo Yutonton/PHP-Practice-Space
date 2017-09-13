@@ -33,6 +33,8 @@ function addDBFB($uidfb)
 		// http://msdn.microsoft.com/library/azure/dd179438.aspx
 		$code = $e->getCode();
         $error_message = $e->getMessage();
+        echo "Erro code: " . $code."\n";
+        echo "Erro msg: " . $error_message."\n";
 	}
 }
 
