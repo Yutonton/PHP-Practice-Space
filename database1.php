@@ -124,8 +124,8 @@ function readRowDatabase($uid)
         $error_message = $e->getMessage();
 
 	}
-    echo "Error code:";// . $code; ."\n";
-    echo "Error msg:";// $error_messagecode "\n";
+    //echo "Error code:";// . $code; ."\n";
+    //echo "Error msg:";// $error_messagecode "\n";
 	$entities = $result->getEntities();
     
     //var_dump($entities);
