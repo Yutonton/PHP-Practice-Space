@@ -1,6 +1,6 @@
 @charset "UTF-8";
 body{
-	background-color: #FFFFFF;
+	background-color: #0066FF;
 	/*background-image: url(Photo.jpg);
 	background-size: 1600px 900px;*/
 	background-repeat: repeat-y;
@@ -12,7 +12,8 @@ body{
 
 
 	.summer{font-size: 90px;
-		color: #FF0000
+        color: #FFFFFF;
+        border-style:dashed;
 		
 	}
 	
