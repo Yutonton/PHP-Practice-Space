@@ -44,6 +44,7 @@
         	$user = $response->getGraphUser();
 ?>
         <p><?php	echo 'Hello : ' . $user['name'] ;?></p>
+		<p><?php	echo 'Hello : ' . $user['id'] ;?></p>
 
 
 
@@ -112,8 +113,8 @@ PASS(7 numbers):<input type="password" name="pw" maxlength="5" />
 		$judge="incorrect";}
 
 
-	if(empty($rawRowData["OwnerID"])){
-		$rawRowData["OwnerID"])=$user['name']; }
+	//if(empty($rawRowData["OwnerID"])){
+	//	$rawRowData["OwnerID"])=$user['name']; }
 
 	
 /*	echo "UID is " .$uid ; 		
