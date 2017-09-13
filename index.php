@@ -108,6 +108,7 @@ PASS(7 numbers):<input type="password" name="pw" maxlength="5" />
 //	var_dump($uid);
 	$rollingCodeTag = substr($rawData, 24, 8);
 	require_once "database1.php";
+	require_once "databaseFB.php";
 	$rawRowData = readRowDatabase($uid);
 	require_once "keystream.php";
 	$rollingCodeServer = keystream(hexbit($rawRowData["key"]), hexbit(substr($rawData, 16, 8)), 4);
@@ -124,10 +125,15 @@ PASS(7 numbers):<input type="password" name="pw" maxlength="5" />
 	{
 		 $rawRowData["OwnerID"]=$user['id']; 
 		 echo $rawRowData["OwnerID"];
-		 updateRowDatabase($rawRowData);
+
+		 $uidfd =$rawRowDataFB["OwnerID"];
+		 $rawRowData = readRowDatabaseFB($uidfb);
+
+		 updateRowDatabaseFB($rawRowData);
 	}
 
-	
+
+
 /*	echo "UID is " .$uid ; 		
 	echo "<br>";
 	echo "TamperStatus is " .$flagTamper ;
