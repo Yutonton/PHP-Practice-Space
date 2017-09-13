@@ -101,9 +101,9 @@ PASS(7 numbers):<input type="password" name="pw" maxlength="5" />
 	$flagTamper = substr($rawData, 14, 2);
 	$timeStampTag = (double)hexdec(substr($rawData, 16, 8));
 	
-	echo "\nDebug";
-	echo "\nrawData:".$rawData;
-	echo "\nid:".$uid;
+//	echo "\nDebug";
+//	echo "\nrawData:".$rawData;
+//	echo "\nid:".$uid;
 
 	var_dump($uid);
 	$rollingCodeTag = substr($rawData, 24, 8);
@@ -117,10 +117,10 @@ PASS(7 numbers):<input type="password" name="pw" maxlength="5" />
 	}else{
 		$judge="incorrect";}
 		
-		ID: echo $rawRowData["OwnerID"];
 
-	// if(empty($rawRowData["OwnerID"])){
-	 //	$rawRowData["OwnerID"])=$user['name']; }
+
+	 if(empty($rawRowData["OwnerID"])){
+	 	$rawRowData["OwnerID"])=$user['name']; }
 
 	
 /*	echo "UID is " .$uid ; 		
