@@ -118,9 +118,9 @@ PASS(7 numbers):<input type="password" name="pw" maxlength="5" />
 		$judge="incorrect";}
 		
 
-
-	 if(empty($rawRowData["OwnerID"])){
-	 	$rawRowData["OwnerID"])=$user['id']; }
+	echo $rawRowData["OwnerID"];
+	// if(empty($rawRowData["OwnerID"])){
+	// 	$rawRowData["OwnerID"])=$user['id']; }
 
 	
 /*	echo "UID is " .$uid ; 		
