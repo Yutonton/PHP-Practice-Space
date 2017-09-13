@@ -25,7 +25,9 @@ function addDB($uid, $key)
 	$entity->addProperty("CountRollingCodeOK", EdmType::INT32, 0);
 	$entity->addProperty("LastCountTimeStampError", EdmType::DATETIME, new DateTime());
 	$entity->addProperty("LastCountRollingCodeError", EdmType::DATETIME, new DateTime());
-	$entity->addProperty("LastCountRollingCodeOK", EdmType::DATETIME, new DateTime());
+    $entity->addProperty("LastCountRollingCodeOK", EdmType::DATETIME, new DateTime());
+    
+    $entity->addProperty("OwnerID", EdmType::STRING,NULL);
 	
 	try{
 		$tableRestProxy->insertEntity("DatabaseSIC43NT", $entity);
@@ -88,6 +90,8 @@ function updateRowDatabase($arrayRawUpdateData)
 	$entity->setPropertyValue("LastCountTimeStampError", $arrayRawUpdateData["LastCountTimeStampError"]);
 	$entity->setPropertyValue("LastCountRollingCodeError", $arrayRawUpdateData["LastCountRollingCodeError"]);
 	$entity->setPropertyValue("LastCountRollingCodeOK", $arrayRawUpdateData["LastCountRollingCodeOK"]);
+
+	$entity->setPropertyValue("FacebookID", $arrayRawUpdateData["OwnerID"]);
 	
 	try {	
 		$tableRestProxy->updateEntity("DatabaseSIC43NT", $entity);
@@ -135,7 +139,9 @@ function readRowDatabase($uid)
 		$arrayRawData["CountRollingCodeOK"] = $entities[0]->getProperty("CountRollingCodeOK")->getValue();
 		$arrayRawData["LastCountTimeStampError"] = $entities[0]->getProperty("LastCountTimeStampError")->getValue();
 		$arrayRawData["LastCountRollingCodeError"] = $entities[0]->getProperty("LastCountRollingCodeError")->getValue();
-		$arrayRawData["LastCountRollingCodeOK"] = $entities[0]->getProperty("LastCountRollingCodeOK")->getValue();
+        $arrayRawData["LastCountRollingCodeOK"] = $entities[0]->getProperty("LastCountRollingCodeOK")->getValue();
+        
+        $arrayRawData["OwnerID"] = $entities[0]->getProperty("OwnerID")->getValue();
 
 		return $arrayRawData;
 	} 

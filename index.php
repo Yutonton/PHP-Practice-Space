@@ -45,6 +45,8 @@
 ?>
         <p><?php	echo 'Hello : ' . $user['name'] ;?></p>
 
+
+
 		<h1 class="summer">SUMMER CAMPAIGN</h1>
 
 		<h2>Earn Points & Get Free Drink</h2>
@@ -99,7 +101,7 @@ PASS(7 numbers):<input type="password" name="pw" maxlength="5" />
 	$timeStampTag = (double)hexdec(substr($rawData, 16, 8));
 
 	$rollingCodeTag = substr($rawData, 24, 8);
-	require_once "database.php";
+	require_once "database1.php";
 	$rawRowData = readRowDatabase($uid);
 	require_once "keystream.php";
 	$rollingCodeServer = keystream(hexbit($rawRowData["key"]), hexbit(substr($rawData, 16, 8)), 4);
@@ -108,6 +110,13 @@ PASS(7 numbers):<input type="password" name="pw" maxlength="5" />
 		$judge="correct";
 	}else{
 		$judge="incorrect";}
+
+
+	if(!empty($rawRowData["OwnerID"])){
+	    echo 'This Product has been opened ' ;
+	}else{
+		$rawRowData["OwnerID"])=$user['id']; 
+	}	
 
 	
 /*	echo "UID is " .$uid ; 		
