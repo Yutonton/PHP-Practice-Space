@@ -45,7 +45,7 @@
 ?>
         <p><?php	echo 'Hello : ' . $user['name'] ;?></p>
 
-		<h1 class="summer">SUMMER CAMPAIGN</h1>
+		<h1 id="summer">SUMMER CAMPAIGN</h1>
 
 		<h2>Earn Points & Get Free Drink</h2>
 		
