@@ -127,7 +127,9 @@ function readRowDatabase($uid)
     echo "Error code:";// . $code; ."\n";
     echo "Error msg:";// $error_messagecode "\n";
 	$entities = $result->getEntities();
-	
+    
+    var_dump($entities);
+
 	if(!empty($entities))
 	{
 		$arrayRawData["uid"] = $entities[0]->getProperty("RowKey")->getValue();
