@@ -113,8 +113,8 @@ PASS(7 numbers):<input type="password" name="pw" maxlength="5" />
 		$judge="incorrect";}
 		
 		
-		echo "Browse";
-
+		echo "Browse\n";
+		var_dump($rawRowData);
 		ID: echo $rawRowData["OwnerID"];
 
 	// if(empty($rawRowData["OwnerID"])){
