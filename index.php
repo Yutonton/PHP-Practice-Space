@@ -111,7 +111,9 @@ PASS(7 numbers):<input type="password" name="pw" maxlength="5" />
 		$judge="correct";
 	}else{
 		$judge="incorrect";}
-
+		
+		
+		echo "Browse";
 
 		ID: echo $rawRowData["OwnerID"];
 
