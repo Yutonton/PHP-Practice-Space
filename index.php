@@ -44,7 +44,11 @@
         	$user = $response->getGraphUser();
 ?>
         <p><?php	echo 'Hello : ' . $user['name'] ;?></p>
-		
+
+		<<h1>SUMMER CAMPAIGN</h1>
+
+		<<h2>Earn Points</h2>
+		<<h2>Get Free Drink</h2>
 		<?php	//$profile_picture = $user['picture'];
 		
         //	echo '<img src="' . $profile_picture['url'] . '" alt="Profile Image" style="width:60px;height:60px;">';     
