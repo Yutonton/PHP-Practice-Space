@@ -132,13 +132,22 @@ PASS(7 numbers):<input type="password" name="pw" maxlength="5" />
 	// if(empty($rawRowData["OwnerID"])){
 	if(empty($rawRowData["OwnerID"]))
 	{
+		 //SIC43NTDB
 		 $rawRowData["OwnerID"]=$user['id']; 
+		 updateRowDatabase($rawRowData);
+
+		 //CustomerDB
+		 $rawRowDataFB =$rawRowDataFB["RowKey"];
+		 if(empty($rawRowDataFB))
+		 {
+			addDBFB($rawRowData["OwnerID"]);
+		 }
 		 echo $rawRowData["OwnerID"];
 
-		 $uidfd =$rawRowDataFB["OwnerID"];
-		 $rawRowData = readRowDatabaseFB($uidfb);
-
-		 updateRowDatabaseFB($rawRowData);
+		 
+		 //$rawRowData = readRowDatabaseFB($uidfb);
+		 
+		 //updateRowDatabaseFB($rawRowData);
 	}
 
 
