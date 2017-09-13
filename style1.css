@@ -6,7 +6,7 @@ body{
 	background-repeat: repeat-y;
 	
 	size: 1600px 900px;
-	font-family: 'Exo', sans-serif;
+	
 
 }
 
@@ -16,7 +16,9 @@ body{
     border-color:#1c1c1c;
 }
 
-p {font-size:24px;}
+p {	font-size:90px;
+	font-family: 'Exo', sans-serif;
+}
 
 footer{
 	background-color: #FFFFFF;
