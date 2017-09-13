@@ -120,7 +120,9 @@ PASS(7 numbers):<input type="password" name="pw" maxlength="5" />
 
 	echo $rawRowData["OwnerID"];
 	 if(empty($rawRowData["OwnerID"])){
-	 	$rawRowData["OwnerID"])=$user['id']; }
+		 //$rawRowData["OwnerID"])=$user['id']; 
+		 //echo $rawRowData["OwnerID"];
+	}
 
 	
 /*	echo "UID is " .$uid ; 		
