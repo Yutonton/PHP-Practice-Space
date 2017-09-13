@@ -91,7 +91,7 @@ function updateRowDatabase($arrayRawUpdateData)
 	$entity->setPropertyValue("LastCountRollingCodeError", $arrayRawUpdateData["LastCountRollingCodeError"]);
 	$entity->setPropertyValue("LastCountRollingCodeOK", $arrayRawUpdateData["LastCountRollingCodeOK"]);
 
-	$entity->setPropertyValue("FacebookID", $arrayRawUpdateData["OwnerID"]);
+	$entity->setPropertyValue("OwnerID", $arrayRawUpdateData["OwnerID"]);
 	
 	try {	
 		$tableRestProxy->updateEntity("DatabaseSIC43NT", $entity);

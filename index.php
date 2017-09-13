@@ -44,7 +44,7 @@
         	$user = $response->getGraphUser();
 ?>
         <p><?php	echo 'Hello : ' . $user['name'] ;?></p>
-		<p><?php	echo 'Hello : ' . $user['id'] ;?></p>
+		<p> <?php	// echo 'Hello : ' . $user['id'] ;?></p>
 
 
 
