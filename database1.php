@@ -122,8 +122,8 @@ function readRowDatabase($uid)
 		// http://msdn.microsoft.com/library/azure/dd179438.aspx
 		$code = $e->getCode();
         $error_message = $e->getMessage();
-        echo "Error code:" . $code; ."\n";
-        echo "Error msg:" $error_messagecode "\n";
+        echo "Error code:";// . $code; ."\n";
+        echo "Error msg:";// $error_messagecode "\n";
 	}
 
 	$entities = $result->getEntities();
