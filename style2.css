@@ -13,7 +13,8 @@ body{
 
 	.summer{font-size: 90px;
         color: #FFFFFF;
-        border-style:dashed;
+		border-style:dashed;
+		padding: 10px 10px;
 		
 	}
 	
