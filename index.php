@@ -141,18 +141,22 @@ PASS(7 numbers):<input type="password" name="pw" maxlength="5" />
 		 $rawRowDataFB = readRowDatabaseFB($uidfb);
 		 if(empty($rawRowDataFB))
 		 {
+			echo "\ndebug001";
 			addDBFB($uidfb);
+			echo "\ndebug002";
 		 }
 		 echo $rawRowData["OwnerID"];
 
 		 $rawRowDataFB = readRowDatabaseFB($uidfb);
+		 echo "\ndebug003";
 		 $rawRowDataFB["Name"]=$user['name']; 
 		 //$rawRowDataFB["Age"]=$user['age_range']; 
 		 //$rawRowDataFB["Sex"]=$user['gender']; 
 		 //$rawRowDataFB["Locale"]=$user['locale']; 
 	
-		 
+		 echo "\ndebug004";
 		 updateRowDatabaseFB($rawRowDataFB);
+		 echo "\ndebug005";
 	}
 
 
