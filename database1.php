@@ -27,7 +27,7 @@ function addDB($uid, $key)
 	$entity->addProperty("LastCountRollingCodeError", EdmType::DATETIME, new DateTime());
     $entity->addProperty("LastCountRollingCodeOK", EdmType::DATETIME, new DateTime());
     
-    $entity->addProperty("OwnerID", EdmType::STRING,NULL);
+    $entity->addProperty("OwnerID", EdmType::INT32,NULL);
 	
 	try{
 		$tableRestProxy->insertEntity("DatabaseSIC43NT", $entity);
