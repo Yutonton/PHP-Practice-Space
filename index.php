@@ -100,6 +100,11 @@ PASS(7 numbers):<input type="password" name="pw" maxlength="5" />
 	$uid = substr($rawData, 0, 14);
 	$flagTamper = substr($rawData, 14, 2);
 	$timeStampTag = (double)hexdec(substr($rawData, 16, 8));
+	
+	echo "\nDebug";
+	echo "\nrawData:".$rawData;
+	echo "\nid:".$uid;
+
 	var_dump($uid);
 	$rollingCodeTag = substr($rawData, 24, 8);
 	require_once "database1.php";
@@ -112,9 +117,6 @@ PASS(7 numbers):<input type="password" name="pw" maxlength="5" />
 	}else{
 		$judge="incorrect";}
 		
-		
-		echo "Browse\n";
-		var_dump($rawRowData);
 		ID: echo $rawRowData["OwnerID"];
 
 	// if(empty($rawRowData["OwnerID"])){
