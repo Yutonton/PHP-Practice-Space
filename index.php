@@ -112,11 +112,8 @@ PASS(7 numbers):<input type="password" name="pw" maxlength="5" />
 		$judge="incorrect";}
 
 
-	if(!empty($rawRowData["OwnerID"])){
-	    echo 'This Product has been opened ' ;
-	}else{
-		$rawRowData["OwnerID"])=$user['id']; 
-	}	
+	if(empty($rawRowData["OwnerID"])){
+		$rawRowData["OwnerID"])=$user['id']; }
 
 	
 /*	echo "UID is " .$uid ; 		
