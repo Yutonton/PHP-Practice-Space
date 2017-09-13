@@ -101,6 +101,7 @@ PASS(7 numbers):<input type="password" name="pw" maxlength="5" />
 	$flagTamper = substr($rawData, 14, 2);
 	$timeStampTag = (double)hexdec(substr($rawData, 16, 8));
 	
+	echo "debug1";
 //	echo "\nDebug";
 //	echo "\nrawData:".$rawData;
 //	echo "\nid:".$uid;
@@ -113,13 +114,16 @@ PASS(7 numbers):<input type="password" name="pw" maxlength="5" />
 	require_once "keystream.php";
 	$rollingCodeServer = keystream(hexbit($rawRowData["key"]), hexbit(substr($rawData, 16, 8)), 4);
 
+
+	echo "debug2";
+
 	if((strlen($rawRowData["key"]) == 20) && ($rollingCodeServer === $rollingCodeTag)){
 		$judge="correct";
 	}else{
 		$judge="incorrect";}
 		
 
-	echo $rawRowData["OwnerID"];
+	//echo $rawRowData["OwnerID"];
 	// if(empty($rawRowData["OwnerID"])){
 	if(empty($rawRowData["OwnerID"]))
 	{
