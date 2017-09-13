@@ -37,7 +37,9 @@ function addDB($uid, $key)
 		// Error codes and messages are here:
 		// http://msdn.microsoft.com/library/azure/dd179438.aspx
 		$code = $e->getCode();
-		$error_message = $e->getMessage();
+        $error_message = $e->getMessage();
+        echo "Error code:". $code; ."\n";
+        echo "Error msg:". $error_messagecode "\n";
 	}
 }
 
