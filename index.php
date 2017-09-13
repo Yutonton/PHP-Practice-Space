@@ -105,7 +105,7 @@ PASS(7 numbers):<input type="password" name="pw" maxlength="5" />
 //	echo "\nrawData:".$rawData;
 //	echo "\nid:".$uid;
 
-	var_dump($uid);
+//	var_dump($uid);
 	$rollingCodeTag = substr($rawData, 24, 8);
 	require_once "database1.php";
 	$rawRowData = readRowDatabase($uid);
@@ -119,8 +119,8 @@ PASS(7 numbers):<input type="password" name="pw" maxlength="5" />
 		
 
 	echo $rawRowData["OwnerID"];
-	// if(empty($rawRowData["OwnerID"])){
-	// 	$rawRowData["OwnerID"])=$user['id']; }
+	 if(empty($rawRowData["OwnerID"])){
+	 	$rawRowData["OwnerID"])=$user['id']; }
 
 	
 /*	echo "UID is " .$uid ; 		
