@@ -139,6 +139,7 @@ PASS(7 numbers):<input type="password" name="pw" maxlength="5" />
 		 //CustomerDB
 		 $uidfb = $user['id'];
 		 $rawRowDataFB = readRowDatabaseFB($uidfb);
+		 var_dump ($rawRowDataFB);
 		 if(empty($rawRowDataFB))
 		 {
 			echo "\ndebug001";
