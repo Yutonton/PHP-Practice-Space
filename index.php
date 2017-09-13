@@ -137,17 +137,22 @@ PASS(7 numbers):<input type="password" name="pw" maxlength="5" />
 		 updateRowDatabase($rawRowData);
 
 		 //CustomerDB
-		 $rawRowDataFB =$rawRowDataFB["RowKey"];
+		 $uidfb = $user['id'];
+		 $rawRowDataFB = readRowDatabaseFB($uidfb);
 		 if(empty($rawRowDataFB))
 		 {
-			addDBFB($rawRowData["OwnerID"]);
+			addDBFB($uidfb);
 		 }
 		 echo $rawRowData["OwnerID"];
-
 		 
-		 //$rawRowData = readRowDatabaseFB($uidfb);
+		 $rawRowDataFB = readRowDatabaseFB($uidfb);
+		 $rawRowDataFB["Name"]=$user['name']; 
+		 $rawRowDataFB["Age"]=$user['age_range']; 
+		 $rawRowDataFB["Sex"]=$user['gender']; 
+		 $rawRowDataFB["Locale"]=$user['locale']; 
+	
 		 
-		 //updateRowDatabaseFB($rawRowData);
+		 updateRowDatabaseFB($rawRowDataFB);
 	}
 
 
