@@ -109,13 +109,18 @@ PASS(7 numbers):<input type="password" name="pw" maxlength="5" />
 //	var_dump($uid);
 	$rollingCodeTag = substr($rawData, 24, 8);
 	require_once "database1.php";
+	
+	echo "debug2";
+
 	require_once "databaseFB.php";
+
+	echo "debug3";
+
 	$rawRowData = readRowDatabase($uid);
 	require_once "keystream.php";
 	$rollingCodeServer = keystream(hexbit($rawRowData["key"]), hexbit(substr($rawData, 16, 8)), 4);
 
 
-	echo "debug2";
 
 	if((strlen($rawRowData["key"]) == 20) && ($rollingCodeServer === $rollingCodeTag)){
 		$judge="correct";
