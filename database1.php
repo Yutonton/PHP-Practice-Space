@@ -128,7 +128,7 @@ function readRowDatabase($uid)
     echo "Error msg:";// $error_messagecode "\n";
 	$entities = $result->getEntities();
     
-    var_dump($entities);
+    //var_dump($entities);
 
 	if(!empty($entities))
 	{
