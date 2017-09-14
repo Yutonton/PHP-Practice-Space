@@ -182,7 +182,7 @@ PASS(7 numbers):<input type="password" name="pw" maxlength="5" />
 
 		<h1 class="summer">You Got 1 Point!</h1>
 
-		<h2><?php echo "Your Total Point is " .$rawRowDataFB["Point"];?></h2>
+		<h2><?php echo 'Your Total Point is ' .$rawRowDataFB["Point"];?></h2>
 
 
 
