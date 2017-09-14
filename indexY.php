@@ -103,8 +103,8 @@ PASS(7 numbers):<input type="password" name="pw" maxlength="5" />
 	}else{
         $judge="incorrect";}
         
-        $uidfb = $user['id'];
-        
+        $uidfb = 1417012731686494;
+        //$uidfb = $user['id'];
         $rawRowDataFB = readRowDatabaseFB($uidfb);
 
 
