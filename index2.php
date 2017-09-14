@@ -1,4 +1,21 @@
-﻿
+﻿<?php require 'header.php'; ?>
+
+
+
+ <section id="bodyflame">
+ 
+	<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+  			var js, fjs = d.getElementsByTagName(s)[0];
+  			if (d.getElementById(id)) return;
+  			js = d.createElement(s); js.id = id;
+		  	js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.10&appId=280487102433701";
+            fjs.parentNode.insertBefore(js, fjs);
+           }(document, 'script', 'facebook-jssdk'));
+		</script>
+
+
+  
 <?php
 
        		 require_once '/vendor/autoload.php';
@@ -26,7 +43,14 @@
 
         	$user = $response->getGraphUser();
 ?>
-        
+        <h1 class="summer">Your point has been used</h1>
+	<	<p> <?php	// echo 'Hello : ' . $user['id'] ;?></p>
+
+
+
+	<!--	<h1 class="summer">SUMMER CAMPAIGN</h1>
+
+		<h2>Earn Points & Get Free Drink</h2> -->
 		
 		<?php	//$profile_picture = $user['picture'];
 		
@@ -103,103 +127,59 @@ PASS(7 numbers):<input type="password" name="pw" maxlength="5" />
 	}else{
 		$judge="incorrect";}
 		
-        $rawRowDataFB = readRowDatabaseFB($uidfb);
 
 
+
+        
 	//echo $rawRowData["OwnerID"];
-	// if(empty($rawRowData["OwnerID"])){
+//	 if(empty($rawRowData["OwnerID"])){
 
- 
-		/*	if($flagTamper=="00" && empty($rawRowData["OwnerID"]))
-			{echo "This Product is new" ;
-				echo "<br>";
-			
-			}else if($flagTamper=="AA" && empty($rawRowData["OwnerID"]))
-	{
+
 		 //SIC43NTDB
-		 $rawRowData["OwnerID"]=$user['id']; 
-		 updateRowDatabase($rawRowData);
+	//	 $rawRowData["OwnerID"]=$user['id']; 
+	//	 updateRowDatabase($rawRowData);
 
 		 //CustomerDB
-		 $uidfb = $user['id'];
+		// $uidfb = $user['id'];
 		 $rawRowDataFB = readRowDatabaseFB($uidfb);
 	//	 var_dump ($rawRowDataFB);
-		 if(empty($rawRowDataFB["uid"]))
-		 {
-			echo "\ndebug001";
+	
+			//echo "\ndebug001";
 			addDBFB($uidfb);
 	//		echo "\ndebug002";
-		 }
+		 
 	//	 echo $rawRowData["OwnerID"];
 
 		 $rawRowDataFB = readRowDatabaseFB($uidfb);
 	//	 echo "\ndebug003";
-		 $rawRowDataFB["Name"]=$user['name']; 
-		 $rawRowDataFB["Age"]=$user['age_range']; 
-		 $rawRowDataFB["Sex"]=$user['gender']; 
-		 $rawRowDataFB["Locale"]=$user['locale']; 
-		 $rawRowDataFB["Point"]= $rawRowDataFB["Point"]+1; 
+		 $rawRowDataFB["Point"]=0; 
+	
 	
 	//	 echo "\ndebug004";
 		 updateRowDatabaseFB($rawRowDataFB);
-	
-		 echo "You Got 1 Point!";
+	//	 echo "\ndebug005";
 
 	
 
-	}else if(!empty($rawRowData["OwnerID"])){
 	
-	header("Location: ./indexX.php"); 
-	//echo "Debug01";
 
-	}   */
+
+
+/*	echo "UID is " .$uid ; 		
+	echo "<br>";
+	echo "TamperStatus is " .$flagTamper ;
+	echo "<br>";
+	echo "TimeStamp is" .$timeStampTag ;
+	echo "<br>";
+	echo "RollingCode is " .$rollingCodeTag ;
+	echo "<br>";
+	echo "RollingCode from server is " .$rollingCodeServer ;
+	echo "<br>";
+	echo "This RolligCode is " .$judge ;
+*/	
 ?>
 
 
-
-
-
-
-	<?php require 'header.php'; ?>
-
-
-
- <section id="bodyflame">
- 
-	<div id="fb-root"></div>
-		<script>(function(d, s, id) {
-  			var js, fjs = d.getElementsByTagName(s)[0];
-  			if (d.getElementById(id)) return;
-  			js = d.createElement(s); js.id = id;
-		  	js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.10&appId=280487102433701";
-            fjs.parentNode.insertBefore(js, fjs);
-           }(document, 'script', 'facebook-jssdk'));
-		</script>
-
-
-  
-
-	<p><?php //	echo 'Hello : ' . $user['name'] ;?></p>
-		<p> <?php	// echo 'Hello : ' . $user['id'] ;?></p>
-
-		<h1 class="summer">You Got 1 Point!</h1>
-
-       
-        <p><?php echo 'Your Total Point ' .$rawRowDataFB["Point"] ;?></p>
-
-
-
-     <?php   if($rawRowDataFB["Point"]==2) : ?>
-            
-            <form action="index2.php" method="post">
-            
-            <p><input type="submit" value="Get Free Present!!"></p>
-            </form>
-            
-            <?php endif; ?>
-
-
-       
 
 
 

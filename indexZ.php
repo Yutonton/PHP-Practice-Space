@@ -1,4 +1,21 @@
-﻿
+﻿<?php require 'header.php'; ?>
+
+
+
+ <section id="bodyflame">
+ 
+	<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+  			var js, fjs = d.getElementsByTagName(s)[0];
+  			if (d.getElementById(id)) return;
+  			js = d.createElement(s); js.id = id;
+		  	js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.10&appId=280487102433701";
+            fjs.parentNode.insertBefore(js, fjs);
+           }(document, 'script', 'facebook-jssdk'));
+		</script>
+
+
+  
 <?php
 
        		 require_once '/vendor/autoload.php';
@@ -26,7 +43,14 @@
 
         	$user = $response->getGraphUser();
 ?>
-        
+        <h1 class="summer">This Product has been opened</h1>
+	<	<p> <?php	// echo 'Hello : ' . $user['id'] ;?></p>
+
+
+
+	<!--	<h1 class="summer">SUMMER CAMPAIGN</h1>
+
+		<h2>Earn Points & Get Free Drink</h2> -->
 		
 		<?php	//$profile_picture = $user['picture'];
 		
@@ -72,7 +96,7 @@ PASS(7 numbers):<input type="password" name="pw" maxlength="5" />
 </form>
 -->
 <?php
-	$rawData = strtoupper($_GET['d']);
+/*	$rawData = strtoupper($_GET['d']);
 	$uid = substr($rawData, 0, 14);
 	$flagTamper = substr($rawData, 14, 2);
 	$timeStampTag = (double)hexdec(substr($rawData, 16, 8));
@@ -103,18 +127,12 @@ PASS(7 numbers):<input type="password" name="pw" maxlength="5" />
 	}else{
 		$judge="incorrect";}
 		
-        $rawRowDataFB = readRowDatabaseFB($uidfb);
-
 
 	//echo $rawRowData["OwnerID"];
 	// if(empty($rawRowData["OwnerID"])){
 
- 
-		/*	if($flagTamper=="00" && empty($rawRowData["OwnerID"]))
-			{echo "This Product is new" ;
-				echo "<br>";
-			
-			}else if($flagTamper=="AA" && empty($rawRowData["OwnerID"]))
+	
+/*	if($flagTamper=="AA" && empty($rawRowData["OwnerID"]))
 	{
 		 //SIC43NTDB
 		 $rawRowData["OwnerID"]=$user['id']; 
@@ -138,68 +156,36 @@ PASS(7 numbers):<input type="password" name="pw" maxlength="5" />
 		 $rawRowDataFB["Age"]=$user['age_range']; 
 		 $rawRowDataFB["Sex"]=$user['gender']; 
 		 $rawRowDataFB["Locale"]=$user['locale']; 
-		 $rawRowDataFB["Point"]= $rawRowDataFB["Point"]+1; 
 	
 	//	 echo "\ndebug004";
 		 updateRowDatabaseFB($rawRowDataFB);
-	
-		 echo "You Got 1 Point!";
+	//	 echo "\ndebug005";
 
 	
 
-	}else if(!empty($rawRowData["OwnerID"])){
+	}else{
 	
-	header("Location: ./indexX.php"); 
-	//echo "Debug01";
+	<meta http-equiv="Refresh" content="15;URL=http://www.example.com/">
 
-	}   */
+	} */
+
+
+
+/*	echo "UID is " .$uid ; 		
+	echo "<br>";
+	echo "TamperStatus is " .$flagTamper ;
+	echo "<br>";
+	echo "TimeStamp is" .$timeStampTag ;
+	echo "<br>";
+	echo "RollingCode is " .$rollingCodeTag ;
+	echo "<br>";
+	echo "RollingCode from server is " .$rollingCodeServer ;
+	echo "<br>";
+	echo "This RolligCode is " .$judge ;
+*/	
 ?>
 
 
-
-
-
-
-	<?php require 'header.php'; ?>
-
-
-
- <section id="bodyflame">
- 
-	<div id="fb-root"></div>
-		<script>(function(d, s, id) {
-  			var js, fjs = d.getElementsByTagName(s)[0];
-  			if (d.getElementById(id)) return;
-  			js = d.createElement(s); js.id = id;
-		  	js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.10&appId=280487102433701";
-            fjs.parentNode.insertBefore(js, fjs);
-           }(document, 'script', 'facebook-jssdk'));
-		</script>
-
-
-  
-
-	<p><?php //	echo 'Hello : ' . $user['name'] ;?></p>
-		<p> <?php	// echo 'Hello : ' . $user['id'] ;?></p>
-
-		<h1 class="summer">You Got 1 Point!</h1>
-
-       
-        <p><?php echo 'Your Total Point ' .$rawRowDataFB["Point"] ;?></p>
-
-
-
-     <?php   if($rawRowDataFB["Point"]==2) : ?>
-            
-            <form action="index2.php" method="post">
-            
-            <p><input type="submit" value="Get Free Present!!"></p>
-            </form>
-            
-            <?php endif; ?>
-
-
-       
 
 
 
