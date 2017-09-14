@@ -1,12 +1,12 @@
 @charset "UTF-8";
 
-/*@media screen and ( max-width:479px ){}*/
+/*@media screen and ( max-width:480px ){}*/
 
 
 body{
 	background-color: #00A2FF;
 	background-image: url(SUMMERCAMPAIGN-PHONEver1.png);
-	background-size: 1080px 1920px;
+	background-size: 540px 860px;
 	background-repeat: repeat-y;
 	
 	size: 1600px 900px;
