@@ -108,7 +108,7 @@ PASS(7 numbers):<input type="password" name="pw" maxlength="5" />
 	// if(empty($rawRowData["OwnerID"])){
 
  
-			if($flagTamper=="00" && empty($rawRowData["OwnerID"]))
+		/*	if($flagTamper=="00" && empty($rawRowData["OwnerID"]))
 			{echo "This Product is new" ;
 				echo "<br>";
 			
@@ -141,8 +141,7 @@ PASS(7 numbers):<input type="password" name="pw" maxlength="5" />
 	//	 echo "\ndebug004";
 		 updateRowDatabaseFB($rawRowDataFB);
 	
-		
-		 header("Location: ./indexY.php"); 
+		 echo "You Got 1 Point!";
 
 	
 
@@ -151,7 +150,7 @@ PASS(7 numbers):<input type="password" name="pw" maxlength="5" />
 	header("Location: ./indexX.php"); 
 	//echo "Debug01";
 
-	}  ?>
+	}  ?> */
 
 
 
@@ -178,12 +177,12 @@ PASS(7 numbers):<input type="password" name="pw" maxlength="5" />
 
   
 
-	<p><?php	echo 'Hello : ' . $user['name'] ;?></p>
-		<p> <?php	 echo 'Hello : ' . $user['id'] ;?></p>
+	<p><?php //	echo 'Hello : ' . $user['name'] ;?></p>
+		<p> <?php	// echo 'Hello : ' . $user['id'] ;?></p>
 
-		<h1 class="summer">SUMMER CAMPAIGN</h1>
+		<h1 class="summer">You Got 1 Point!</h1>
 
-		<h2>Earn Points & Get Free Drink</h2>
+		<h2><?php echo "Your Total Point is " .$rawRowDataFB["Point"];?></h2>
 
 
 
