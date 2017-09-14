@@ -141,11 +141,11 @@ PASS(7 numbers):<input type="password" name="pw" maxlength="5" />
 
 		 //CustomerDB
 		 $uidfb = $user['id'];
-		 $rawRowDataFB = readRowDatabaseFB($uidfb);
+	//	 $rawRowDataFB = readRowDatabaseFB($uidfb);
 	//	 var_dump ($rawRowDataFB);
 	
 			//echo "\ndebug001";
-			addDBFB($uidfb);
+		//	addDBFB($uidfb);
 	//		echo "\ndebug002";
 		 
 	//	 echo $rawRowData["OwnerID"];
