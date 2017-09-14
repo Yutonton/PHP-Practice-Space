@@ -165,7 +165,7 @@ PASS(7 numbers):<input type="password" name="pw" maxlength="5" />
 
 	}else{
 	
-	//	<a href="indexX.php">
+		header("Location: ./indexX.php"); 
 
 	} 
 
