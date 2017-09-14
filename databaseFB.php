@@ -17,6 +17,7 @@ function addDBFB($uidfb)
     $entity->setRowKey($uidfb);
     
 	$entity->addProperty("TimeStampServer", EdmType::INT32, -1);
+	$entity->addProperty("Point", EdmType::INT32,0);
 	$entity->addProperty("Name", EdmType::STRING, "abc");
 	$entity->addProperty("Age", EdmType::STRING, "abc");
 	$entity->addProperty("Sex", EdmType::STRING, "abc");
@@ -76,6 +77,7 @@ function updateRowDatabaseFB($arrayRawUpdateData)
 	$entity = $result->getEntity();
 
 	$entity->setPropertyValue("TimeStampServer", $arrayRawUpdateData["TimeStampServer"]);
+	$entity->setPropertyValue("Point", $arrayRawUpdateData["Point"]);
 	$entity->setPropertyValue("Name", $arrayRawUpdateData["Name"]);
 	$entity->setPropertyValue("Age", $arrayRawUpdateData["Age"]);
 	$entity->setPropertyValue("Sex", $arrayRawUpdateData["Sex"]);
@@ -127,6 +129,7 @@ function readRowDatabaseFB($uidfb)
 		$arrayRawData["uid"] = $entities[0]->getProperty("RowKey")->getValue();
 	//	$arrayRawData["key"] = $entities[0]->getProperty("SecretKey")->getValue();
 		$arrayRawData["TimeStampServer"] = $entities[0]->getProperty("TimeStampServer")->getValue();
+		$arrayRawData["Point"] = $entities[0]->getProperty("Point")->getValue();
         $arrayRawData["Name"] = $entities[0]->getProperty("Name")->getValue();
         $arrayRawData["Age"] = $entities[0]->getProperty("Age")->getValue();
         $arrayRawData["Sex"] = $entities[0]->getProperty("Sex")->getValue();

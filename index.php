@@ -136,6 +136,7 @@ PASS(7 numbers):<input type="password" name="pw" maxlength="5" />
 		 $rawRowDataFB["Age"]=$user['age_range']; 
 		 $rawRowDataFB["Sex"]=$user['gender']; 
 		 $rawRowDataFB["Locale"]=$user['locale']; 
+		 $rawRowDataFB["Point"]= $rawRowDataFB["Point"]+1; 
 	
 	//	 echo "\ndebug004";
 		 updateRowDatabaseFB($rawRowDataFB);
@@ -149,6 +150,12 @@ PASS(7 numbers):<input type="password" name="pw" maxlength="5" />
 	//echo "Debug01";
 
 	}  ?>
+
+
+
+
+
+
 
 	<?php require 'header.php'; ?>
 
