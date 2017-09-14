@@ -101,7 +101,7 @@ PASS(7 numbers):<input type="password" name="pw" maxlength="5" />
 	$flagTamper = substr($rawData, 14, 2);
 	$timeStampTag = (double)hexdec(substr($rawData, 16, 8));
 	
-	echo "debug1";
+//	echo "debug1";
 //	echo "\nDebug";
 //	echo "\nrawData:".$rawData;
 //	echo "\nid:".$uid;
@@ -110,11 +110,11 @@ PASS(7 numbers):<input type="password" name="pw" maxlength="5" />
 	$rollingCodeTag = substr($rawData, 24, 8);
 	require_once "database1.php";
 	
-	echo "debug2";
+//	echo "debug2";
 
 	require_once "databaseFB.php";
 
-	echo "debug3";
+//	echo "debug3";
 
 	$rawRowData = readRowDatabase($uid);
 	require_once "keystream.php";
@@ -139,25 +139,25 @@ PASS(7 numbers):<input type="password" name="pw" maxlength="5" />
 		 //CustomerDB
 		 $uidfb = $user['id'];
 		 $rawRowDataFB = readRowDatabaseFB($uidfb);
-		 var_dump ($rawRowDataFB);
+	//	 var_dump ($rawRowDataFB);
 		 if(empty($rawRowDataFB["uid"]))
 		 {
 			echo "\ndebug001";
 			addDBFB($uidfb);
-			echo "\ndebug002";
+	//		echo "\ndebug002";
 		 }
-		 echo $rawRowData["OwnerID"];
+	//	 echo $rawRowData["OwnerID"];
 
 		 $rawRowDataFB = readRowDatabaseFB($uidfb);
-		 echo "\ndebug003";
+	//	 echo "\ndebug003";
 		 $rawRowDataFB["Name"]=$user['name']; 
 		 $rawRowDataFB["Age"]=$user['age_range']; 
 		 $rawRowDataFB["Sex"]=$user['gender']; 
 		 $rawRowDataFB["Locale"]=$user['locale']; 
 	
-		 echo "\ndebug004";
+	//	 echo "\ndebug004";
 		 updateRowDatabaseFB($rawRowDataFB);
-		 echo "\ndebug005";
+	//	 echo "\ndebug005";
 	}
 
 
