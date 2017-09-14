@@ -10,7 +10,7 @@
 
 
 <link rel="stylesheet"  href="style2-PC.css">
-<link rel="stylesheet" media="screen and (max-width: 480px)"  href="style2-phone.css">
+<link rel="stylesheet" media="screen and (max-width: 360px)"  href="style2-phone.css">
 
 </head>
 <body>
