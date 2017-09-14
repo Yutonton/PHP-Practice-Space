@@ -135,9 +135,8 @@ PASS(7 numbers):<input type="password" name="pw" maxlength="5" />
 			if($flagTamper=="00" && empty($rawRowData["OwnerID"]))
 			{echo "This Product is new" ;
 				echo "<br>";
-			}
 			
-	if($flagTamper=="AA" && empty($rawRowData["OwnerID"]))
+			}else if($flagTamper=="AA" && empty($rawRowData["OwnerID"]))
 	{
 		 //SIC43NTDB
 		 $rawRowData["OwnerID"]=$user['id']; 
@@ -168,9 +167,9 @@ PASS(7 numbers):<input type="password" name="pw" maxlength="5" />
 
 	
 
-	}else{
+	}else if(!empty($rawRowData["OwnerID"])){
 	
-		header("Location: ./indexX.php"); 
+	//	header("Location: ./indexX.php"); 
 
 	} 
 
