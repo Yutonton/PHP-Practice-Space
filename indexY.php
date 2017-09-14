@@ -104,7 +104,7 @@ PASS(7 numbers):<input type="password" name="pw" maxlength="5" />
 		$judge="incorrect";}
 		
         $rawRowDataFB = readRowDatabaseFB($uidfb);
-        
+
 	//echo $rawRowData["OwnerID"];
 	// if(empty($rawRowData["OwnerID"])){
 
@@ -184,7 +184,7 @@ PASS(7 numbers):<input type="password" name="pw" maxlength="5" />
 		<h1 class="summer">You Got 1 Point!</h1>
 
        
-        <p><?php echo 'Your Total Point is  ' .$rawRowDataFB["Point"] ;?></p>
+        <p><?php echo 'Your Total Point ' .$rawRowDataFB["Point"] ;?></p>
 
 
 
