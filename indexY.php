@@ -101,8 +101,10 @@ PASS(7 numbers):<input type="password" name="pw" maxlength="5" />
 	if((strlen($rawRowData["key"]) == 20) && ($rollingCodeServer === $rollingCodeTag)){
 		$judge="correct";
 	}else{
-		$judge="incorrect";}
-		
+        $judge="incorrect";}
+        
+        $uidfb = $user['id'];
+        
         $rawRowDataFB = readRowDatabaseFB($uidfb);
 
 
@@ -195,7 +197,7 @@ PASS(7 numbers):<input type="password" name="pw" maxlength="5" />
             
             <p><input type="submit" value="Get Free Present!!"></p>
             </form>
-            
+
             <?php endif; ?>
 
 
