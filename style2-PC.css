@@ -6,7 +6,9 @@ body{
 	background-repeat: repeat-y;
 	
 	size: 1600px 900px;
-
+    display: block;
+	margin-left: auto;
+	margin-right: auto; 
 	font-family: 'Bowlby One SC', cursive;
 
 }
