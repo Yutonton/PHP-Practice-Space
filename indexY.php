@@ -150,8 +150,8 @@ PASS(7 numbers):<input type="password" name="pw" maxlength="5" />
 	header("Location: ./indexX.php"); 
 	//echo "Debug01";
 
-	}  ?> */
-
+	}   */
+?>
 
 
 
