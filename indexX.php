@@ -43,14 +43,14 @@
 
         	$user = $response->getGraphUser();
 ?>
-        <p><?php	echo 'Hello : ' . $user['name'] ;?></p>
-		<p> <?php	 echo 'Hello : ' . $user['id'] ;?></p>
+        <h1 class="summer">This Product has been opened</h1>
+	<	<p> <?php	// echo 'Hello : ' . $user['id'] ;?></p>
 
 
 
-		<h1 class="summer">SUMMER CAMPAIGN</h1>
+	<!--	<h1 class="summer">SUMMER CAMPAIGN</h1>
 
-		<h2>Earn Points & Get Free Drink</h2>
+		<h2>Earn Points & Get Free Drink</h2> -->
 		
 		<?php	//$profile_picture = $user['picture'];
 		
@@ -132,7 +132,7 @@ PASS(7 numbers):<input type="password" name="pw" maxlength="5" />
 	// if(empty($rawRowData["OwnerID"])){
 
 	
-	if($flagTamper=="AA" && empty($rawRowData["OwnerID"]))
+/*	if($flagTamper=="AA" && empty($rawRowData["OwnerID"]))
 	{
 		 //SIC43NTDB
 		 $rawRowData["OwnerID"]=$user['id']; 
@@ -165,9 +165,9 @@ PASS(7 numbers):<input type="password" name="pw" maxlength="5" />
 
 	}else{
 	
-		<a href="indexX.php">
+	<meta http-equiv="Refresh" content="15;URL=http://www.example.com/">
 
-	} 
+	} */
 
 
 
