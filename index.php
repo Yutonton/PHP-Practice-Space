@@ -1,21 +1,4 @@
-﻿<?php require 'header.php'; ?>
-
-
-
- <section id="bodyflame">
- 
-	<div id="fb-root"></div>
-		<script>(function(d, s, id) {
-  			var js, fjs = d.getElementsByTagName(s)[0];
-  			if (d.getElementById(id)) return;
-  			js = d.createElement(s); js.id = id;
-		  	js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.10&appId=280487102433701";
-            fjs.parentNode.insertBefore(js, fjs);
-           }(document, 'script', 'facebook-jssdk'));
-		</script>
-
-
-  
+﻿
 <?php
 
        		 require_once '/vendor/autoload.php';
@@ -43,14 +26,7 @@
 
         	$user = $response->getGraphUser();
 ?>
-        <p><?php	echo 'Hello : ' . $user['name'] ;?></p>
-		<p> <?php	 echo 'Hello : ' . $user['id'] ;?></p>
-
-
-
-		<h1 class="summer">SUMMER CAMPAIGN</h1>
-
-		<h2>Earn Points & Get Free Drink</h2>
+        
 		
 		<?php	//$profile_picture = $user['picture'];
 		
@@ -172,23 +148,36 @@ PASS(7 numbers):<input type="password" name="pw" maxlength="5" />
 	//	header("Location: ./indexX.php"); 
 	echo "Debug01";
 
-	} 
+	}  ?>
+
+	<?php require 'header.php'; ?>
 
 
 
-/*	echo "UID is " .$uid ; 		
-	echo "<br>";
-	echo "TamperStatus is " .$flagTamper ;
-	echo "<br>";
-	echo "TimeStamp is" .$timeStampTag ;
-	echo "<br>";
-	echo "RollingCode is " .$rollingCodeTag ;
-	echo "<br>";
-	echo "RollingCode from server is " .$rollingCodeServer ;
-	echo "<br>";
-	echo "This RolligCode is " .$judge ;
-*/	
-?>
+ <section id="bodyflame">
+ 
+	<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+  			var js, fjs = d.getElementsByTagName(s)[0];
+  			if (d.getElementById(id)) return;
+  			js = d.createElement(s); js.id = id;
+		  	js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.10&appId=280487102433701";
+            fjs.parentNode.insertBefore(js, fjs);
+           }(document, 'script', 'facebook-jssdk'));
+		</script>
+
+
+  
+
+	<p><?php	echo 'Hello : ' . $user['name'] ;?></p>
+		<p> <?php	 echo 'Hello : ' . $user['id'] ;?></p>
+
+		<h1 class="summer">SUMMER CAMPAIGN</h1>
+
+		<h2>Earn Points & Get Free Drink</h2>
+
+
+
 
 
 
