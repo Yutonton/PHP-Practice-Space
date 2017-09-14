@@ -140,7 +140,8 @@ PASS(7 numbers):<input type="password" name="pw" maxlength="5" />
 	
 	//	 echo "\ndebug004";
 		 updateRowDatabaseFB($rawRowDataFB);
-	//	 echo "\ndebug005";
+	
+		 echo "You Got 1 Point!";
 
 	
 
