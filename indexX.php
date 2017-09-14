@@ -96,7 +96,7 @@ PASS(7 numbers):<input type="password" name="pw" maxlength="5" />
 </form>
 -->
 <?php
-	$rawData = strtoupper($_GET['d']);
+/*	$rawData = strtoupper($_GET['d']);
 	$uid = substr($rawData, 0, 14);
 	$flagTamper = substr($rawData, 14, 2);
 	$timeStampTag = (double)hexdec(substr($rawData, 16, 8));
