@@ -140,7 +140,7 @@ PASS(7 numbers):<input type="password" name="pw" maxlength="5" />
 	//	 updateRowDatabase($rawRowData);
 
 		 //CustomerDB
-		// $uidfb = $user['id'];
+		 $uidfb = $user['id'];
 		 $rawRowDataFB = readRowDatabaseFB($uidfb);
 	//	 var_dump ($rawRowDataFB);
 	
