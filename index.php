@@ -109,8 +109,8 @@ PASS(7 numbers):<input type="password" name="pw" maxlength="5" />
 
  
 			if($flagTamper=="00" && empty($rawRowData["OwnerID"]))
-			{echo "This Product is new" ;
-				echo "<br>";
+			{//echo "This Product is new" ;
+			//	echo "<br>";
 			
 			}else if($flagTamper=="AA" && empty($rawRowData["OwnerID"]))
 	{
@@ -192,7 +192,7 @@ PASS(7 numbers):<input type="password" name="pw" maxlength="5" />
 
 
 
-	<div class="fb-share-button" data-href="https://internsilicon01.azurewebsites.net/" data-layout="box_count" data-size="large" data-mobile-iframe="true">
+<!--	<div class="fb-share-button" data-href="https://internsilicon01.azurewebsites.net/" data-layout="box_count" data-size="large" data-mobile-iframe="true">
 		<a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Finternsilicon01.azurewebsites.net%2F&amp;src=sdkpreparse">Share</a>
 	</div>
 
@@ -200,7 +200,7 @@ PASS(7 numbers):<input type="password" name="pw" maxlength="5" />
 	<a href="https://twitter.com/share" class="twitter-share-button" data-size="large">Tweet</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 	
-	</section>
+	</section> -->
 
 <?php require 'footer.php'; ?>
 
