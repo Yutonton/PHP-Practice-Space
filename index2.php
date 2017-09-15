@@ -43,8 +43,8 @@
 
         	$user = $response->getGraphUser();
 ?>
-        <h1 class="summer">Your point has been used</h1>
-	<	<p> <?php	// echo 'Hello : ' . $user['id'] ;?></p>
+        <h1 class="summer">Thank You!!</h1>
+		<p> <?php	// echo 'Hello : ' . $user['id'] ;?></p>
 
 
 

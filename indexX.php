@@ -43,8 +43,8 @@
 
         	$user = $response->getGraphUser();
 ?>
-        <h1 class="summer">This Product has been opened</h1>
-	<	<p> <?php	// echo 'Hello : ' . $user['id'] ;?></p>
+        <h2 class="summer">This Product has been opened</h2>
+		<p> <?php	// echo 'Hello : ' . $user['id'] ;?></p>
 
 
 
