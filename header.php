@@ -8,6 +8,7 @@
 
 <link href="https://fonts.googleapis.com/css?family=Exo:900" rel="stylesheet"> 
 <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
 
 
 <link rel="stylesheet" type="text/css" href="style.css">
