@@ -71,6 +71,13 @@ PASS(7 numbers):<input type="password" name="pw" maxlength="5" />
 <p><input type="submit" value="GO!!"></p>
 </form>
 -->
+
+<h2 class="mdc-typography--display2">Hello, Material Components!</h2>
+<div class="mdc-textfield" data-mdc-auto-init="MDCTextfield">
+<input type="text" class="mdc-textfield__input" id="demo-input">
+<label for="demo-input" class="mdc-textfield__label">Tell us how you feel!</label>
+</div>
+
 <?php
 	$rawData = strtoupper($_GET['d']);
 	$uid = substr($rawData, 0, 14);

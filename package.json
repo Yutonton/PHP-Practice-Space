@@ -1,0 +1,25 @@
+{
+  "name": "xzzz",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yutonton/PHP-Practice-Space.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yutonton/PHP-Practice-Space/issues"
+  },
+  "homepage": "https://github.com/Yutonton/PHP-Practice-Space#readme",
+  "dependencies": {
+    "jquery": "^3.2.1"
+  }
+}
