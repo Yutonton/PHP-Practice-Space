@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+
+@import "@material/animation/mixins";
+@import "compass";
+
+.mdc-typography-display {
+  @include mdc-animation-acceleration-curve;}  
+
+/*@media screen and ( max-width:480px ){}*/
+
+header{color: #FFFFFF;
+
+}
+
+body{
+	background-color: #00A2FF;
+/*	background-image: url(SUMMERCAMPAIGN-PHONEver1.png);*/
+	background-size: 540px 960px;
+	background-repeat: repeat-y;
+	
+	size: 1600px 900px;
+    display: block;
+	margin-left: auto;
+	margin-right: auto; 
+	font-family: 'Open Sans', sans-serif;
+
+}
+
+
+	.summer{font-size: 60px;
+        color: #FFFFFF;
+		border-style:dashed;
+		padding: 10px 10px;
+		background-color: #00A2FF;
+		background-size: 540px 960px;
+		
+	}
+
+
+	
+
+p{font-size:24px;
+	color: #FFFFFF;}
+
+	h2{color: #FFFFFF}
+
+footer{
+	background-color: #FFFFFF;
+	margin: 20px 0px 0px -10px;
+	padding: 10px;
+}
